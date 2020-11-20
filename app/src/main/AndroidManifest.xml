@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.antonpriyma.githubber">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_github_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_github_logo"
+        android:supportsRtl="true"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.FileViewerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_file_viewer"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name="com.antonpriyma.githubber.Activity.CodeViewerActivity" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.TestRepoActivity"
+            android:label="@string/title_activity_test_repo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.RepositoryInfoActivity"
+            android:label="@string/title_activity_repository_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.profile" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.PullRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.DeveloperInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.IssuesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.OrganizationsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.GistsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.FollowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.RepositoriesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.profile" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLogin" />
+        <activity
+            android:name="com.antonpriyma.githubber.Activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppMaterialDialog" />
+    </application>
+
+</manifest>
